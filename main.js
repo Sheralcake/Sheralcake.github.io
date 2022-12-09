@@ -1,16 +1,13 @@
-alert(`Bienvenido a mi pagina`);
-
-let app = document.getElementById(`typewriter`);
-
-let typewriter = new typewriter(app,{
-    loop: true,
-    delay: 75,
+let app = document.getElementById('typewriter');
+ 
+let typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
 });
-
+ 
 typewriter
-  .pausefor(2500)
-  .typeString(`Desarrollo sitios wed y escribo articulos sobre programacion`);
-  .pausefor(200)
+  .pauseFor(2500)
+  .typeString('Desarrollo sitios web y escribo artículos sobre programación.')
+  .pauseFor(200)
   .deleteChars(10)
-  .start() ;
-  
+  .start();
